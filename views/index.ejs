@@ -1,32 +1,22 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <!-- CSS Section -->
-    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel='stylesheet' href='/Content/app.css' />
-  </head>
-  <body>
+<%- include('./partials/header.ejs') -%>
+<%- include('./partials/mainnav.ejs') -%>
+  
 
-    <div class="container">
-      <div class="jumbotron">
-          <h1 class="display-4">Julian Miguel Alapan - <%= title %><</h1>
-          <img src="COMP125-M2020-Assignment_3/Assets/images/currentPicture.jpg" alt="currentPic">
-          <p>Welcome to <%= title %></p>
-          <p id="firstParagraph"></p>
-          <br>
-          <p id="secondParagraph"></p>
+    <main class="container">
+      <div class="row">
+        <div class="col">
+          <div class="jumbotron">
+            <h1 class="display-4"><%= title %></h1>
+        </div>
+        </div>
       </div>
-    </div>
+      <div class="row justify-content-md-center">
+        <div class="col-6">
+          <h2 class="display-5">Welcome to <%= title %></h2>
+          <img src="/public/Assets/images/currentPicture.jpg" alt="currentPic">
+          <hr class="my-4">
+        </div>
+      </div>
 
-    
-
-    
-
-    <!-- JavaScript Section -->
-    <script src="./jquery/dist/jquery.min.js"></script>
-    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./Scripts/app.js"></script>
-  </body>
-</html>
+<%- include('./partials/bottomnav.ejs') -%>
+<%- include('./partials/footer.ejs') -%>
