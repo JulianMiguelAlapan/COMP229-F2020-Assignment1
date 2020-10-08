@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -26,9 +26,9 @@ router.get('/about', function(req, res, next) {
   res.render('index', { title: 'About' });
 });
 
-/* GET contact page. */
+/* GET Contact page. */
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact' });
+  res.render('contact', { title: 'Contact', message: 'Contact Us' });
 });
 
 module.exports = router;
