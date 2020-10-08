@@ -1,0 +1,26 @@
+<%- include('./partials/header.ejs') -%>
+<%- include('./partials/mainnav.ejs') -%>
+  
+
+    <main class="container">
+      <div class="row">
+        <div class="col">
+          <div class="jumbotron">
+            <h1 class="display-4"><%= title %></h1>
+        </div>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-6">
+          <h2 class="display-5">Welcome to <%= title %></h2>
+          <p id="firstParagraph"></p>
+          <br>
+          <p id="secondParagraph"></p>
+          <hr class="my-4">
+        </div>
+      </div>
+
+    </main>
+
+<%- include('./partials/bottomnav.ejs') -%>
+<%- include('./partials/footer.ejs') -%>
