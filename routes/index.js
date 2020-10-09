@@ -11,19 +11,19 @@ router.get('/home', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
 
-/* GET products page. */
+/* GET projects page. */
 router.get('/projects', function(req, res, next) {
-  res.render('index', { title: 'Projects' });
+  res.render('projects', { title: 'Projects' });
 });
 
 /* GET services page. */
 router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Services' });
+  res.render('services', { title: 'Services' });
 });
 
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About' });
+  res.render('about', { title: 'About' });
 });
 
 /* GET Contact page. */
